@@ -1,4 +1,7 @@
-
+export interface ResponseData {
+    items: any[],
+    total: number
+}
 export interface DefaultResponse {
     status: string;
     message: string;
