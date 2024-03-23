@@ -8,7 +8,7 @@ export interface MakeInvoiceReq {
     customer_name: string;
     salesperson_name: string;
     notes: string | null; // Notes can be nullable
-    products: string[]; // Assuming products is an array of Product objects
+    products: number[]; // Assuming products is an array of Product objects
 }
 
 export default class InvoiceService {

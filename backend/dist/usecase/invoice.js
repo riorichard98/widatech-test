@@ -43,8 +43,10 @@ class InvoiceService {
                 let pageNumber = Number(page);
                 let limitNumber = Number(limit);
                 // Check if pageNumber and limitNumber are valid numbers and greater than 0
-                if (isNaN(pageNumber) || pageNumber < 1 || isNaN(limitNumber) || limitNumber < 1) {
+                if (isNaN(pageNumber) || pageNumber < 1) {
                     pageNumber = 1;
+                }
+                if (isNaN(limitNumber) || limitNumber < 1) {
                     limitNumber = 1;
                 }
                 const Invoice = this.invoiceRepo;

@@ -14,5 +14,7 @@ LEFT JOIN
     products p ON p.id = ANY(string_to_array(replace(replace(i.products, '[',''), ']',''), ',', '')::int[])
 GROUP BY 
     i.id, i.date, i.customer_name, i.salesperson_name, i.notes, i.products
+ORDER BY 
+    i.date DESC 
 LIMIT $1
 OFFSET $2;

@@ -1,0 +1,22 @@
+.invoicecard {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.invoicecard .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.invoicecard .info p {
+    margin-bottom: 5px;
+}
+
+.invoicecard .details p {
+    margin-bottom: 5px;
+}

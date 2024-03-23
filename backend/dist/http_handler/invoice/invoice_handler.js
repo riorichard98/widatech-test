@@ -22,6 +22,7 @@ function default_1(container) {
             const invalidKeys = (0, bodyValidator_1.validateRequestBody)(request.body, model_1.VALID_MAKE_INVOICE_REQUEST_BODY);
             if (invalidKeys.length > 0) {
                 reply.send(invalidKeys);
+                return;
             }
             const requestBody = request.body;
             try {

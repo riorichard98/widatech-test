@@ -1,0 +1,16 @@
+.content{
+    background-color: #f2f2f2; /* Light gray */
+    border: 1px solid #cccccc; /* Medium gray border */
+    color: #333333; /* Dark gray text */
+    height: 50px;
+    width: 450px;
+    position: absolute;
+    top: 0; /* Positioned at the top of the viewport */
+    right: 50%; /* Positioned at the middle horizontally */
+    transform: translateX(50%); /* Adjust for horizontal centering */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}

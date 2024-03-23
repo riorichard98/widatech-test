@@ -21,8 +21,8 @@ function default_1(container) {
             // validate the request body first before proceed
             const invalidKeys = (0, bodyValidator_1.validateRequestBody)(request.body, model_1.VALID_PRODUCT_REQUEST_BODY);
             if (invalidKeys.length > 0) {
-                console.log("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
                 reply.send(invalidKeys);
+                return;
             }
             const requestBody = request.body;
             try {

@@ -66,7 +66,7 @@ class InvoiceRepository {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 const offset = (page - 1) * limit;
-                const selectAllInvoiceSql = fs_1.default.readFileSync('select_all_invoice.sql', 'utf8');
+                const selectAllInvoiceSql = fs_1.default.readFileSync('./src/domain/select_all_invoice.sql', 'utf8');
                 const result = yield this.db.query(selectAllInvoiceSql, [limit, offset]);
                 return result.rows;
             }

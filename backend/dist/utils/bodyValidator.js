@@ -2,6 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.validateRequestBody = void 0;
 function validateRequestBody(requestBody, validRequestBody) {
+    // Check if requestBody is undefined or null
+    if (requestBody === undefined || requestBody === null) {
+        return ['Request body is missing or null'];
+    }
     const requiredBody = [];
     for (const key in validRequestBody) {
         const expectedType = validRequestBody[key];

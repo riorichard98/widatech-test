@@ -20,7 +20,7 @@ class ProductService {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 const Product = this.productRepo;
-                const products = Product.SelectProductsByIds(requestData.ids);
+                const products = yield Product.SelectProductsByIds(requestData.ids);
                 let resp = (0, response_1.createResponse)(responeCode_1.responseCode.SUCCESS, "success", products);
                 return resp;
             }

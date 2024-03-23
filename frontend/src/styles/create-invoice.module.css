@@ -1,0 +1,88 @@
+/* .form {
+    padding: 70px;
+    font-size: 20px;
+    width: 800px;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    overflow-y: auto;
+} */
+
+.title {
+    border-bottom: solid 0.5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inputform {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.inputform label {
+    margin-bottom: 10px;
+}
+
+.inputform input {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #bbb;
+    font-size: 20px;
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.inputform textarea {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #bbb;
+    font-size: 20px;
+    height: 150px;
+    padding-left: 5px;
+    border-radius: 5px;
+    resize: none;
+}
+
+.inputform table {
+    width: 40%;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 2px;
+}
+
+.inputform table th {
+    background-color: #f2f2f2;
+}
+
+.inputform table td,
+.inputform table th {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.customersalesinput {
+    display: flex;
+    flex-direction: row;
+}
+
+.autocomplete {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.autocomplete button {
+    height: 20px;
+    font-size: 12px;
+}
+
+.autocomplete button:hover{
+    cursor: pointer;
+}
